@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js"> -->
+  <style>
+
+     /* h1 {
+      line-height: 2.5rem;
+      color: #0000;
+      width: 5.5rem;
+      text-shadow:0 0 rgb(14, 14, 14), 0 2.5rem;
+       overflow: hidden;
+     transition: 0.3s;
+    } 
+     h1:hover {
+     
+      text-shadow:0 -2.5rem , 0 0 blueviolet;
+    } 
+     
+    h2 {
+      line-height: 2.5rem;
+      color: #0000;
+      width: 5.5rem;
+      text-shadow:0 0 rgb(14, 14, 14), 0 2.5rem;
+       overflow: hidden;
+     transition: 0.3s;
+    } 
+     h2:hover {
+     
+      text-shadow:0 -2.5rem , 0 0 blueviolet;
+    }  */
+    /* h1 {
+      line-height:  2.5rem;
+      width: 5.5rem;
+      text-shadow: 0 0 , 0 2.5rem;
+      transition: 0.3s;
+    }   
+
+    h1:hover {
+      text-shadow: 0 -2.5rem , 0 0 purple;
+    } */
+
+    /* .swipe {
+      line-height: 2.5rem;
+      color: black;
+      text-shadow: 0 0 black, 0 2.5rem ;
+      transition: 0.45s;
+      overflow: hidden;
+      width: 5.5rem;
+    }
+
+    .swipe:hover {
+       text-shadow: 0 -2.5rem , 0  0 green;
+    } */
+    
+     /* * {
+      margin: 0;
+      padding: 0;
+     }
+    .parent {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      position: relative; 
+    }   */
+      /* z-index: 1; */
+     
+
+     /* .parent_2 {
+      position: absolute;
+       border: 5px solid black;
+       height: 3rem;
+      
+     }
+      .child1:hover {
+       height: -1.7rem;
+     }
+
+     .child2:hover {
+      height: 1.5rem;
+     } */
+    /* h1 {
+
+      display: flex;
+      line-height: 2rem;
+      text-shadow: 0 0 #0000, 0 2.3rem green;
+     
+      transition: 0.67s;
+      border: 2px solid black;
+    }
+
+    h1:hover {
+      text-shadow: 0 -2.4rem orange,0 0 green;
+    } */
+    /* .preload {
+       height: 80px;
+       width: 80px;
+       border: 12px solid rgb(255, 255, 255);
+       border-radius: 50%;
+       border-bottom-color: rgb(179, 205, 63);
+       border-right-color: rgb(146, 12, 248);
+       border-left-color:rgb(245, 19, 245) ;
+       border-top-color: dodgerblue;
+       animation: preload 0.79s ease-in-out infinite;
+       position: absolute;
+       z-index: -1;
+    }
+
+    @keyframes preload {
+      0% {
+        rotate: 20deg;
+      }
+      100% {
+        rotate: 360deg;
+      }
+    } */
+
+    /* h1 {
+      border: 2px solid black;
+      line-height: 2.5rem;
+      text-shadow: 0 0 rgb(221, 255, 0), 0  2.5rem #1095c1;
+      transition: 0.34s;
+     
+    }
+    h1:hover {
+      text-shadow: 0 -2.5rem #000 , 0 0  purple ;
+    } */
+
+    /* .preload {
+      border: 12px solid rgb(252, 240, 240);
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      border-top-color: dodgerblue;
+      /* animation: preload 0.34s ease-in  ; */
+     /* animation: chan 0.45s ease-in infinite;
+    } */
+    
+/* 
+    @keyframes chan {
+       0% {
+        rotate: 10deg;
+       }
+       100% {
+        rotate: 360deg;
+       }
+    } */
+     
+    /* a {
+      text-decoration: none; */
+    /* } */ 
+
+    /* .extend {
+      border: 2px solid black;
+      background-color: red;
+      height: 20px;
+      width: 6rem;
+    }
+
+    .extend:hover {
+       width: 10rem;
+       transition-timing-function: ease-in-out;
+    } */
+    table,tr {
+      border: 2px solid black;
+    }
+  </style>
+ 
+  </script>
+</head>
+<body>
+  
+     <!-- <div id="div1">
+      <p id="p1">This is my para1</p>
+      <p id="p2">This is my para2</p>
+     </div> -->
+
+     <p id="s">The world</p>
+
+     <!-- <div id="container">
+
+     </div> -->
+      <button onclick="tables()">Click</button>
+     <script>
+
+      function tables () {
+        let table = document.createElement('Table');
+      table.setAttribute('id',"table");
+      document.body.appendChild(table);
+
+      let tablerow = document.createElement('TR');
+      tablerow.setAttribute('id',"tabletr");
+      document.body.appendChild(tablerow);
+    
+      let tabledata = document.createElement('TD');
+      let tableValue = document.createTextNode("Add")
+      tabledata.appendChild(tableValue);
+
+      document.getElementById('table').appendChild(tabledata)
+      }
+// function myFunction() {
+//   var x = document.createElement("TABLE");
+//   x.setAttribute("id", "myTable");
+//   document.body.appendChild(x);
+
+//   var y = document.createElement("TR");
+//   y.setAttribute("id", "myTr");
+//   document.getElementById("myTable").appendChild(y);
+
+//   var z = document.createElement("TD");
+//   var t = document.createTextNode("cell");
+//   z.appendChild(t);
+//   document.getElementById("myTr").appendChild(z);
+// }
+      // let para1 = document.createElement('table')
+      // para1.innerHTML = '<tr><td>Name</td></tr>'
+
+      // document.body.appendChild(para1)
+
+      // document.getElementById('p').style.color= "red"
+       
+      // let para = document.createElement('p')
+      //  para.innerHTML = "This is my para3"
+     
+      // document.body.appendChild(para)
+
+      // let table = document.createElement('table');
+      // let row = document.createElement('tr');
+      // let data = document.createElement('td');
+
+      // data.textContent = "Table Date"
+
+      // row.appendChild(data)
+      // table.appendChild(row)
+      // document.getElementById('container').appendChild(table)
+      // console.log(para)
+      // let element = document.getElementById('div1');
+      // element.appendChild(para)
+      // console.log(element)
+      // let element = document.getElementById('div1')
+      // element.replaceChild(para,para1)
+      // console.log(element)
+
+      // let time = setTimeout('add',20000)
+      // console.log(time)
+      // function add() {
+      //   let totaltime = new Date()
+      //  document.getElementById('p1').innerHTML = totaltime.toISOString()
+      //  console.log(totaltime.toLocaleString())
+      // }
+      // add()
+
+      // setInterval( () => {
+      //   let time = new Date()
+      //   console.log(time)
+      // },1000)
+     
+     
+ 
+      // let orignalpara = document.getElementById('div1');
+      // orignalpara.appendChild(para)
+      // console.log(orignalpara)
+      // let sum = document.getElementById('p1').remove()
+ </script>
+<!--    
+            <div class="parent">
+                
+             <div class="preload">
+
+             </div> -->
+     
+            <!-- </div>
+
+            <div class="extend">
+ 
+            </div>
+            <h1> <a href="http://www.amazon.com">c</a></h1> -->
+           
+      <!-- <div class="parent">
+       <div class="parent_2">
+        <h2 class="child1">contact</h2>
+        <h3 class="child2">ask me?</h3>
+       </div>
+      </div> -->
+
+      
+  <!-- <div class="container-fulid row">
+    <div class="col-2" style="background-color: red;">col-1</div>
+    <div class="col-2" style="background-color: aqua;">col-2</div>
+    <div class="col-2" style="background-color: aquamarine;">col-3</div>
+    <div class="col-2" style="background-color: burlywood;">col-4</div>
+    <div class="col-2" style="background-color: aqua;">col-2</div>
+    <div class="col-2" style="background-color: aquamarine;">col-3</div>
+    </div>
+  <br>
+    <div class="container-fulid row">
+      <div class="col-4 col-12" style="background-color: red; color: white;">extra small device</div>
+      <div class="col-sm-6 col-sm-4 offset-md-4" style="background-color: aqua;">small device</div>
+      <div class="col-md-6 col-md-3" style="background-color: aquamarine;">medium device</div>
+      <div class="col-lg-6 col-sm-6" style="background-color: burlywood;">large device</div>
+      <div class="col-xl-6 col-sm-5" style="background-color: aqua;">x-large device</div>
+      <div class="col-xxl-6 col-sm-7" style="background-color: aqua;">x-large device</div>
+      </div> -->
+
+      <script>
+        // setInterval ('add', () => {
+        //   console.log("surya")
+        // },2000)
+      //  let total = setTimeout( () => {
+      //         console.log(3 + 5)
+      //   },2000)
+
+      //   let add = setInterval( () => {
+      //     console.log(5 + 5)
+      //   },2000)\
+      // let a = 10;
+      // let b = 5;
+      // let result;
+      // let total =  prompt('Add/sub/mult/div')
+      // if(total === 'Add'){
+      //   result = a + b
+      // }else if (total === "sub") {
+      //   result = a - b
+      // }else if (total === 'mult') {
+      //   result = a * b
+      // }else if (total === 'div') {
+      //   result = a / b
+      // }if (total === null) {
+      //     result = "Enter the operation"
+      // }
+    
+
+      // alert("The Answer is :" + result)
+      </script>
+</body>
+</html>
